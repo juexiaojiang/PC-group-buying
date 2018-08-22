@@ -1,0 +1,573 @@
+.wrap{
+	background-color: rgb(246,246,246);
+	/*height: 1920px;*/
+}
+/*头部*/
+.qianggou_header{
+	position: relative;
+	top:0;
+	left: 0;
+	height: 170px;
+	width: 100%;
+	background-color: rgb(255,255,255);
+	z-index: 8;
+}
+.header_top{
+	width: 100%;
+	height: 112px;
+	border-bottom: 1px solid rgb(245,244,241);
+}
+.header_nav_wrap_hide{
+	width: 100%;
+	background-color: #fff;
+}
+.header_nav_wrap{
+	position: relative;
+	width: 64%;
+	height: 58px;
+	margin: 0 auto;
+}
+.header_nav_wrap_hide.fixed{
+	position: fixed;
+	background-color: #fff;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 30;
+}
+/*导航栏*/
+.big_nav{
+	position: relative;
+	float: left;
+	width: 37.2%;
+	/*margin-left: 4%;*/
+	height: 100%;
+	text-align: center;
+}
+.big_nav li{
+	position: relative;
+	line-height: 100%;
+	font-size: 18px;
+	color: #333;
+	float: left;
+	padding: 20px 8%;
+}
+.big_nav li:hover{
+	color: #fd5b45;
+}
+.big_nav li.selected{
+	color: #fff;
+	background-color: #fd5b45;
+}
+.big_nav li:after{
+	content: '';
+	display: block;
+	line-height: 58px;
+	height: 12px;
+	width: 2px;
+	background-color: rgb(229,229,229);
+	position: absolute;
+	right: -2px;
+	bottom: 20px;
+}
+.big_nav li.selected:after{
+	display: none;
+}
+.small_nav{
+	float: left;
+	width: 62.8%;
+}
+.small_nav li{
+	float: left;
+	display: block;
+	margin-right: 3.26%;
+	padding-top:25px;
+	padding-bottom:18px;
+	height: 100%;
+	line-height: 100%;
+	font-size: 14px;
+	color: #666;
+}
+.small_nav li.selected{
+	color: #ff4040;
+	border-bottom: 2px solid #ff4040;
+}
+.small_nav li:hover{
+	color: #ff4040;
+}
+.small_nav li.first{
+	margin-left: 3.1%;
+}
+.small_nav li.last a{
+	float: left;
+	display: block;
+	height: 100%;
+	line-height: 100%;
+	font-size: 14px;
+	color: #666;
+}
+.hide_nav{
+	position: absolute;
+	background-color: rgb(255,255,255);
+	top:57px;
+	right: 5.2%;
+	z-index: 625000;
+}
+.hide_nav li{
+	font-size: 14px;
+	color: #666;
+	padding: 8px;
+}
+.hide_nav li:hover{
+	color: #ff4040;
+}
+/*导航结束*/
+.bg{
+	position: absolute;
+	top:0px;
+	background:url(../images/bg.png) no-repeat center center;
+	background-size: cover;
+	width:100%;
+	height: 717px;
+}
+
+/*内容头部*/
+.qianggou_header_wrap{
+	position: relative;
+	margin: 124px auto 0 auto;
+}
+.header_title{
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+}
+.header_btn_wrap{
+	position: relative;
+	margin-top:42px; 
+	padding-left: 24.4%;
+	text-align: center;
+	font-size: 0;
+}
+.on_sale_btn.normal{
+	float: left;
+	width: 33.3%;
+	height: 48px;
+	border: 1px solid #f2f2f2;
+	border-right: none;
+	line-height: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	color: #fff;
+}
+.on_sale_btn.selected{
+	float: left;
+	width: 33.3%;
+	height: 48px;
+	border: 1px solid #f2f2f2;
+	border-right: none;
+	line-height: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+.on_sale_btn.selected span{
+	font-size: 20px;
+	color: #ff6805;
+}
+.on_sale_btn.normal span{
+	font-size: 20px;
+	color: #fff;
+}
+.will_sale_btn.normal{
+	float: left;
+	width: 33.3%;
+	height: 48px;
+	line-height: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgba(255,255,255,0.15);
+	border: 1px solid #fff;
+	border-left: none;
+	text-align: center;
+}
+.will_sale_btn.selected{
+	float: left;
+	width: 33.3%;
+	height: 48px;
+	line-height: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #fff;
+	border-left: none;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+.will_sale_btn.normal span{
+	font-size: 20px;
+	color: #fff;
+}
+.will_sale_btn.selected span{
+	font-size: 20px;
+	color: #ff6805;
+}
+.ziying_btn.no_select{
+	position: absolute;
+	top:12px;
+	right: 20.2%;
+	display: inline-block;
+}
+.ziying_btn.select{
+	position: absolute;
+	top:12px;
+	right: 20.2%;
+	display: inline-block;
+}
+.ziying_btn span{
+	font-size: 20px;
+	color: #fff;
+}
+.ziying_btn .icon-square{
+	position: absolute;
+	margin-top:5px;
+	z-index: 20;
+	font-size: 17px;
+	color: #fff;
+	margin-left: 10px;
+}
+.ziying_btn .icon-duihao{
+	position: absolute;
+	font-size: 13px;
+	padding: 2px 2px;
+	margin-top:5px;
+	color: #fff;
+	z-index: 21;
+	margin-left: 10px;
+}
+/*回到顶部*/
+.back_top{
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	text-align: center;
+	z-index:10000;
+}
+.back_top li{
+	width: 49px;
+	height: 47px;
+	font-size: 12px;
+	color: #666;
+	background-color: #fff;
+	margin-top:2px;
+	padding-top:15px;
+	box-sizing: border-box;
+	border: 1px solid #ececec;
+}
+.back_top li.will_sale_btn_two{
+	padding: 5px 10px;
+}
+.back_top .icon-zhiding{
+	font-size: 20px;
+}
+.back_top .icon-zhiding:hover{
+	background-color: #fd5b45;
+	color: #fff;
+}
+.back_top li:hover{
+	color: #fd5b45;
+}
+/*正文*/
+.qianggou_con_wrap{
+	position: relative;
+	z-index: 5;
+	margin: 40px auto 0 auto;
+	background-color:rgb(246,246,246)
+	border-radius: 6px;
+	width: 61.25%;
+}
+.qianggou_product_box{
+	position: relative;
+	float: left;
+	margin-bottom:12px;
+	margin-right: 1.0%;
+	width: 23.9%;
+	height: 398px;
+	border-radius: 6px;
+	background-color: #fff;
+	text-align: center;
+}
+.qianggou_product_box .label{
+
+	background:url(../images/on_hot_label.png) no-repeat center center;
+	width: 58px;
+	height: 30px;
+	position: absolute;
+	top:15px;
+	left: -5px;
+	text-align: center;
+	z-index: 200;
+}
+.qianggou_product_box .label span{
+	display: block;
+	font-size:14px;
+	margin-top:7px;
+}
+
+.qianggou_product_box .product_pic{
+	display: block;
+	width: 85.8%;
+	height: 242px;
+	margin: 20px auto 0 auto;
+}
+
+/*动画*/
+.qianggou_product_box.need_hover:hover .product_pic{
+	transform: scale(1.01);
+}
+.qianggou_product_box.need_hover:hover .sale_percent_num_wrap{
+	opacity: 0;
+}
+.qianggou_product_box.need_hover:hover .sale_percent_pic{
+	opacity: 0;
+}
+.qianggou_product_box.need_hover:hover .product_price_wrap{
+	margin-top:-25px;
+}
+.qianggou_product_box.need_hover:hover .car_hover{
+	height: 40px;
+}
+.product_describe_wrap{/*如何显示为一行，且显示省略号？？？？？*/
+	width: 85.8%;
+	height: 20px;
+	margin:20px auto 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.product_describe_wrap .ziying_label{
+	background-color:rgb(255,239,239) ;
+	font-size: 12px;
+	float: left;
+	color: #f66;
+	border: 1px solid #f3a3a7;
+}
+.product_describe_wrap .product_describe{
+	font-size: 14px;
+	color: #333;
+}
+.sale_percent_num_wrap 
+{
+	text-align: left;
+	margin-top:10px;
+	margin-left: 20px;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+.sale_percent_num{
+	font-size: 14px;
+	color: rgb(140,140,140);
+}
+.sale_percent_pic{
+	width: 93%;
+	position: relative;
+}
+.sale_percent_pic .bar_bg{
+	width: 100%;
+	height: 10px;
+	background: repeating-linear-gradient(-45deg,rgb(236,236,236),rgb(255,255,255) 5px);
+	border-radius: 5px;
+	opacity: 1;
+}
+.sale_percent_pic .bar{
+	position: absolute;
+	width: 70%;
+	height: 10px;
+	top:0;
+	left: 0;
+	background: repeating-linear-gradient(-45deg,#ff6509,#f11a14 5px);
+	border-radius: 5px;
+}
+.product_price_wrap{
+	text-align: left;
+	margin-top:6px;
+	margin-left: 20px;
+	transition: margin-top 0.5s;
+}
+.product_price_wrap .now_price{
+	font-size: 26px;
+	color: #fd5b45;
+}
+.product_price_wrap .money{
+	font-size: 18px;
+	color: #fd5b45;
+}
+.product_price_wrap .dot{
+	font-size: 20px;
+	color: #fd5b45;
+}
+.product_price_wrap .ago_price{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+/*蒙层演示*/
+.mask_pic{
+	display: block;
+	width: 85.8%;
+	height: 242px;
+	position: absolute;
+	top:20px;
+	left: 17px;
+	z-index: 151;
+}
+.sale_over{
+	display: block;
+	/*width: 85.8%;*/
+	height: 66px;
+	position: absolute;
+	top:110px;
+	left: 28%;
+	z-index: 152;
+}
+.qianggou_product_box.mask .product_describe_wrap .product_describe{
+	font-size: 14px;
+	color: #999;
+}
+
+.product_price_wrap.mask{
+	text-align: left;
+	margin-top:47px;
+	margin-left: 20px;
+}
+.product_price_wrap.mask .now_price{
+	color: #999;
+}
+.product_price_wrap.mask .money{
+	color: #999;
+}
+.product_price_wrap.mask .dot{
+	color: #999;
+}
+.product_price_wrap.mask .ago_price{
+	color: #999;
+}
+.qianggou_product_box.mask .look_careful{
+	background-color: rgb(255,183,77);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	padding: 11px 30%;
+}
+/*hover事件演示*/
+.qianggou_product_box .car_hover{
+	background-color: rgb(253,91,69);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	height: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 40px;
+	transition: height 0.5s;
+}
+/**/
+.car{
+	background-color: rgb(253,91,69);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	padding: 11px 30%;
+}
+.icon-flash{
+	color: #ffb786;
+	font-size:24px;
+	margin-right: 12px;
+}
+.icon-clock{
+	color: #fff;
+	font-size: 24px;
+	margin-right: 12px;
+}
+.none{
+	display: none;
+}
+.bottom_ad{
+	position: fixed;
+	bottom: 0px;
+	left: 17.9%;
+	z-index: 20000;
+	width: 62%;
+	height: 100px;
+}
+.bottom_ad_wrap{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+.bottom_pic{
+	width: 100%;
+	height: 100%;
+}
+.bottom_ad_wrap .tuoyuan{
+	position: absolute;
+	right: 0px;
+	top:18px;
+}
+.bottom_ad_wrap .icon-arrow-left{
+	position: absolute;
+	color: #fff;
+	right: 0px;
+	top:38px;
+}
+.out_ad{
+	position: fixed;
+	bottom: 0px;
+	left: 17.9%;
+	z-index: 30000;
+	width: 1.6%;
+	height: 100px;
+	background-color: #fd5b45;
+	text-align: center;
+}
+.icon-arrow-right{
+	position: absolute;
+	color: #fff;
+	top:40px;
+	left: 5px;
+}
+.footer{
+	width: 100%;
+	height: 483px;
+	background-color: #fff;
+	margin-top:70px;
+}
+.left_to_right{
+	display: block;
+	animation: slide 1.5s;
+	animation-fill-mode: forwards;
+}
+.right_to_left{
+	display: block;
+	animation: slide_in 1.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes slide{
+	0% {width:0;}
+	100% {width:62%;}
+
+}
+@keyframes slide_in{
+	0% {width:62%;}
+	100% {width:0;}
+
+}
